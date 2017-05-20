@@ -1,0 +1,8 @@
+- type: parallel
+  steps:
+    - name: run-specs
+      service: web
+      command: rspec
+    - name: test-env
+      service: web
+      command: bundle exec ruby test_env.rb

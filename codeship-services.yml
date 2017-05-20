@@ -1,0 +1,6 @@
+web:
+  build:
+    image: grapeapiexample_web
+    dockerfile: Dockerfile
+  environment:
+    TEST_TOKEN: Testing123

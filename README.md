@@ -5,6 +5,10 @@ A [Grape](http://github.com/ruby-grape/grape) API mounted on Rack and running on
 
 * [hello](api/hello.rb): a hello world example that returns a JSON document
 
+Prerequisites
+-------------
+Make sure that the Docker Command Line Tools is installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), [Docker for Windows](https://docs.docker.com/docker-for-windows/) or Docker for Ubuntu (https://docs.docker.com/engine/installation/linux/ubuntu/) (depending on your host operating system).
+
 Run Tests
 ---------
 ```
