@@ -4,3 +4,11 @@ web:
     dockerfile: Dockerfile
   environment:
     TEST_TOKEN: Testing123
+  volumes:
+    - .:/app
+demo_volumes:
+  build:
+    image: myapp
+    dockerfile: Dockerfile.volumes
+  volumes_from:
+    - web

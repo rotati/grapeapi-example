@@ -6,6 +6,14 @@
     - name: test_env
       service: web
       command: bundle exec ruby test_env.rb
+    - type: serial
+      steps:
+      - name: volumes_in
+        service: web
+        command: bundle exec ruby write.rb
+      - name: volumes_out
+        service: web
+        command: bundle exec ruby read.rb
 - type: serial
   steps:
     - name: dockerhub_push
