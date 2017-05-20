@@ -1,6 +1,6 @@
 web:
   build:
-    image: grapeapiexample_web
+    image: rotati/grapeapi-example
     dockerfile: Dockerfile
   environment:
     TEST_TOKEN: Testing123
