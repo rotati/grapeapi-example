@@ -4,6 +4,8 @@ services:
     build:
       image: rotati/grapeapi-example
       dockerfile: Dockerfile
+    environment:
+      TEST_TOKEN: Testing123
     volumes:
       - .:/app
     cached: true

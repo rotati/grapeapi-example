@@ -1,6 +1,8 @@
 Grape API on Rack running on Docker
 ===================================
 
+[ ![Codeship Status for rotati/grapeapi-example](https://app.codeship.com/projects/d2fdb330-1f52-0135-b6b7-56d76522a7b4/status?branch=master)](https://app.codeship.com/projects/220983)
+
 A [Grape](http://github.com/ruby-grape/grape) API mounted on Rack and running on Docker.
 
 * [hello](api/hello.rb): a hello world example that returns a JSON document
