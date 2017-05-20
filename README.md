@@ -1,16 +1,21 @@
 Grape API on Rack running on Docker
 ===================================
 
-A [Grape](http://github.com/ruby-grape/grape) API mounted on Rack.
+A [Grape](http://github.com/ruby-grape/grape) API mounted on Rack and running on Docker.
 
 * [hello](api/hello.rb): a hello world example that returns a JSON document
 
-Run
----
+Run Tests
+---------
+```
+$ docker-compose run web rspec
+```
+
+Run App
+-------
 
 ```
-$ bundle install
-$ rackup
+$ docker-compose up
 ```
 
 ### Hello World
@@ -27,5 +32,5 @@ List Routes
 -----------
 
 ```
-rake routes
+docker-compose run web rake routes
 ```
