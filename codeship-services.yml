@@ -1,9 +1,9 @@
-web:
-  build:
-    image: rotati/grapeapi-example
-    dockerfile: Dockerfile
-  environment:
-    TEST_TOKEN: Testing123
-  volumes:
-    - .:/app
-  cached: true
+version: '2'
+services:
+  web:
+    build:
+      image: rotati/grapeapi-example
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    cached: true
