@@ -11,12 +11,6 @@ Prerequisites
 -------------
 Make sure that the Docker Command Line Tools is installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), [Docker for Windows](https://docs.docker.com/docker-for-windows/) or Docker for Ubuntu (https://docs.docker.com/engine/installation/linux/ubuntu/) (depending on your host operating system).
 
-Building the Docker Image
--------------------------
-```
-$ docker-compose build
-```
-
 Run Tests
 ---------
 For running RSpec its possible to use docker-compose as follows:

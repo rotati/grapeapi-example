@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    build: .
+    image: rotati/grapeapi-example
     command: rackup --host 0.0.0.0
     volumes:
       - .:/app
