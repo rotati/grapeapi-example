@@ -3,3 +3,4 @@
 log
 dockercfg
 codeship.aes
+aws-deployment.env

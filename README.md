@@ -48,3 +48,24 @@ List Routes
 ```
 docker-compose run web rake routes
 ```
+
+Create a ECS Task Definition from docker-compose.yml
+----------------------------------------------------
+```
+ecs-cli compose --project-name hello-world --file docker-compose.yml create
+```
+
+TODO
+----
+
+Check fully integrated deployment using CodeShip Pro - push to master, run build, deploy
+Deploy under outsourcr.com/hello-service/
+Deploy another services under outsourcr.com/hello-reverse-service/
+Check deployment of both sercices on single & multiple clusters
+Check deployment of both sercices as single & multiple tasks
+
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/common_use_cases.html#microservices
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose.html
+https://github.com/awslabs/ecs-refarch-continuous-deployment
+https://blog.codeship.com/deploying-docker-images-to-amazon-ec2-container-service-with-codeship/
+https://blog.codeship.com/easy-blue-green-deployments-on-amazon-ec2-container-service/

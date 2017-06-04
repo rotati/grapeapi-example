@@ -1,0 +1,24 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "hello-world",
+      "image": "103693382385.dkr.ecr.ca-central-1.amazonaws.com/grapeapi-example:latest",
+      "portMappings": [
+        {
+          "hostPort": 9292,
+          "containerPort": 9292,
+          "protocol": "tcp"
+        }
+      ],
+      "workingDirectory": "/app",
+      "command": [
+        "rackup",
+        "--host",
+        "0.0.0.0"
+      ],
+      "memory": 400,
+      "essential": true
+    }
+  ],
+  "family": "hello-world"
+}
